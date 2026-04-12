@@ -1,1 +1,250 @@
-nsert
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #333;
+            font-size: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .project-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .project-type.app {
+            background: #f093fb;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .project-description {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-links a {
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <p>Web & App Development Portfolio</p>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        
+        <div class="projects-grid">
+            <!-- Web Project 1 -->
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <span class="project-type">Web</span>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <p class="project-description">A full-featured online shopping platform with cart functionality, payment integration, and admin dashboard.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Project 1 -->
+            <div class="project-card">
+                <div class="project-image app">📱</div>
+                <div class="project-content">
+                    <span class="project-type app">Mobile App</span>
+                    <h3 class="project-title">Task Manager App</h3>
+                    <p class="project-description">A productivity application for managing daily tasks with reminders, categories, and progress tracking.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">View Details</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Project 2 -->
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <span class="project-type">Web</span>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">A personal portfolio showcasing skills, projects, and professional experience with modern design.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Project 2 -->
+            <div class="project-card">
+                <div class="project-image app">📱</div>
+                <div class="project-content">
+                    <span class="project-type app">Mobile App</span>
+                    <h3 class="project-title">Weather Forecast</h3>
+                    <p class="project-description">A weather application providing real-time forecasts, hourly updates, and location-based predictions.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">View Details</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Project 3 -->
+            <div class="project-card">
+                <div class="project-image">🌐</div>
+                <div class="project-content">
+                    <span class="project-type">Web</span>
+                    <h3 class="project-title">Blog Platform</h3>
+                    <p class="project-description">A content management system for creating and publishing blog posts with rich text editing.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">Live Demo</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Project 3 -->
+            <div class="project-card">
+                <div class="project-image app">📱</div>
+                <div class="project-content">
+                    <span class="project-type app">Mobile App</span>
+                    <h3 class="project-title">Fitness Tracker</h3>
+                    <p class="project-description">A health and fitness app for tracking workouts, calories, and personal fitness goals.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn-primary">View Details</a>
+                        <a href="#" class="btn-secondary">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
